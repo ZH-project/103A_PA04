@@ -1,0 +1,18 @@
+<h1>Edit Transaction</h1>
+<br>
+<form method="post" action="/transaction/edit">
+    <input type="hidden" name="itemId" value="<%= item._id %>">
+    <label for="description"> Description </label>
+    <input type="text" value="<%= item.description %>" name="description">
+    <br>
+    <label for="amount"> Amount </label>
+    <input type="number" value="<%= item.amount %>" name="amount">
+    <br>
+    <label for="category"> Category </label>
+    <input type="text" value="<%= item.category %>" name="category">
+    <br>
+    <label for="date"> Date </label> 
+    <input type="date" value="<%= item.date %>" name="date">
+    <br><br>
+    <input a class="btn btn-primary" type="submit" value="store">
+</form>
